@@ -43,11 +43,11 @@ model_Q = FFiNetModel(
     pred_layers=1
 )
 
-model_D.load_state_dict(torch.load('C:/Users/rch13/Desktop/crystal/train_evaluate/saved_models/FFiNetModel_D(0).pt', map_location=torch.device('cpu')))
+model_D.load_state_dict(torch.load('.../saved models/FFiNetModel_D(0).pt', map_location=torch.device('cpu/gpu')))
 model_D.eval()
-model_P.load_state_dict(torch.load('C:/Users/rch13/Desktop/crystal/train_evaluate/saved_models/FFiNetModel_P(0).pt', map_location=torch.device('cpu')))
+model_P.load_state_dict(torch.load('.../saved models/FFiNetModel_P(0).pt', map_location=torch.device('cpu/gpu')))
 model_P.eval()
-model_Q.load_state_dict(torch.load('C:/Users/rch13/Desktop/crystal/train_evaluate/saved_models/FFiNetModel_Q(0).pt', map_location=torch.device('cpu')))
+model_Q.load_state_dict(torch.load('.../saved models/FFiNetModel_Q(0).pt', map_location=torch.device('cpu/gpu')))
 model_Q.eval()
 
 Atom = Chem.rdchem.Atom
